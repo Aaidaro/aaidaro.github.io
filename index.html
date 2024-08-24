@@ -1,26 +1,24 @@
-{% load static %}
-
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="{{name}} Website" />
     <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, portfolio" />
     <meta name="author" content="lmpixels" />
 
 
-    <link rel="stylesheet" href="{% static 'css/normalize.css' %}" type="text/css">
-    <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}" type="text/css">
-    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css">
-    <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css">
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 
-    <script src="{%static 'js/modernizr.custom.js' %}"></script>
+    <script src="js/modernizr.custom.js"></script>
     <script src="https://kit.fontawesome.com/e4236025ee.js" crossorigin="anonymous"></script>
 </head>
 
@@ -50,7 +48,7 @@
 
                     <!-- Text Logo -->
                     <div class="text-logo">
-                        <a href="{% url 'website:about' %}" class="btn btn-primary">Main Page</a>
+                        <a href="./index.html" class="btn btn-primary">Main Page</a>
                     </div>
                     <!-- /Text Logo -->
 
@@ -80,10 +78,115 @@
             </header>
 
             <!-- /Header -->
-            
-            {% block content%}
 
-            {% endblock %}
+            <div id="main" class="site-main">
+                <div id="main-content" class="single-page-content">
+                    <div id="primary" class="content-area">
+                        <div id="content" class="page-content site-content single-post" role="main">
+                            <!-- Home Page Top Part -->
+                            <div class="row flex-v-align">
+
+                                <div class="col-sm-12 col-md-5 col-lg-5">
+                                    <div class="home-photo">
+                                        <div class="hp-inner">
+                                            <img src="{%static '/img/main_photo.jpg' %}"
+                                                style="background-image: url()">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-7 col-lg-7">
+                                    <div class="home-text hp-left">
+                                        <div class="owl-carousel text-rotation">
+                                            <div class="item">
+                                                <h4>Software Engineer</h4>
+                                            </div>
+
+                                            <div class="item">
+                                                <h4>Data Scientist</h4>
+                                            </div>
+                                        </div>
+
+                                        <h1>Aida Roshani</h1>
+                                        <p style="text-align:justify;">As an Industrial Engineering graduate from the
+                                            University of Tehran, I
+                                            developed a keeninterest in computer science. My involvement as a staff
+                                            member in events
+                                            (Gamein2021, Sharif University) and connections with tech teams during
+                                            university,
+                                            ignited my fascination with this dynamic field.
+                                            My self-taught expertise in Python, SQL, and backend development
+                                            techniques—including Git
+                                            and data structure and algorithms—has equipped me with a solid foundation.
+                                            Recently, I made
+                                            the exciting decision to change my major to Computer Science after the
+                                            university entrance
+                                            exam. Now, my goal is to pursue a computer science career in academia, too.
+                                            Known for my strong work ethic and unwavering commitment to continuous
+                                            learning, I actively
+                                            seek opportunities to apply and expand these skills in a challenging role.
+                                        </p>
+
+                                        <!-- <div class="home-buttons">
+                                      <a href="#" target="_blank" class="btn btn-primary">Download CV</a>
+                                    </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class=" col-xs-12 col-sm-12">
+                                    <div class="home-content">
+                                    </div>
+
+                                    <!--contact information-->
+                                    <div class="row">
+                                        <div class=" col-xs-12 col-sm-4 ">
+                                            <div class="info-block-w-icon">
+                                                <div class="ci-icon">
+                                                    <i class="fa-brands fa-linkedin"></i>
+                                                </div>
+                                                <div class="ci-text">
+                                                    <h4><a
+                                                            href="https://www.linkedin.com/in/aida-roshani-73b489181/">Linkedin</a>
+                                                    </h4>
+                                                    <p>To checkout my Linkedin profile click here.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" col-xs-12 col-sm-4 ">
+                                            <div class="info-block-w-icon">
+                                                <div class="github icon">
+                                                    <i class="fa-brands fa-github"></i>
+                                                </div>
+                                                <div class="ci-text">
+                                                    <h4><a href="https://github.com/Aaidaro">My Github Profile</a></h4>
+                                                    <p>Click the link above to visit my github profile and my projects
+                                                        code</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" col-xs-12 col-sm-4 ">
+                                            <div class="info-block-w-icon">
+                                                <div class="ci-icon">
+                                                    <i class="fa-solid fa-square-envelope"></i>
+                                                </div>
+                                                <div class="ci-text">
+                                                    <img src="{%static '/img/Email.png' %}" style="max-width:200px">
+                                                    <p>If you want to get in touch with me, please use the Gmail address
+                                                        above.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--contact information-->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- Footer -->
             <footer class="site-footer clearfix">
@@ -94,17 +197,17 @@
         </div>
     </div>
 
-    <script src="{% static 'js/jquery-2.1.3.min.js' %}"></script>
+    <script src="js/jquery-2.1.3.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'js/jquery.shuffle.min.js' %}"></script>
-    <script src="{% static 'js/masonry.pkgd.min.js' %}"></script>
-    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
-    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
-    <script src="{% static 'js/jquery.googlemap.js' %}"></script>
-    <script src="{% static 'js/validator.js' %}"></script>
-    <script src="{% static 'js/main.js' %}"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.shuffle.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.googlemap.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
